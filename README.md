@@ -8,9 +8,12 @@ localhost:8051
 https://192.168.249:8051
 ```
 # *Prerequisites*
-To follow along this learning we need to ensure python3 installed 
+To follow along this learning we need to ensure python3 installed with pyspark & streamlit
   ```bash
   python3 --version
+  ```
+  ```bash
+  pip install pyspark, streamlit  
   ```
 # *Project Flow*
 1. Data Processing two CSV files querying using pyspark
