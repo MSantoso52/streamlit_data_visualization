@@ -58,7 +58,7 @@ To follow along this learning we need to ensure python3 installed with pyspark &
    kpis = (number_sells, total_revenue)
    ```
    ```python3
-   # Display Big Customer
+   # Display Big Customer as Bar Chart
    st.title("Big Customers")
 
    st.bar_chart(chart_data, x="customer", y="revenue")
