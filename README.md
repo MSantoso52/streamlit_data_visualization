@@ -8,4 +8,13 @@ To follow along this learning we need to ensure python3 installed
   ```
 # *Project Flow*
 1. Data Processing two CSV files querying using pyspark
-2. Data Visualization using Streamlit
+   ```python3
+   # Import necessary library
+   from pyspark.sql import SparkSession
+   from pyspark.sql.functions import col, format_number
+   from pyspark.sql.types import DoubleType, IntegerType
+
+   # Initilization Spark Session
+   spark = SparkSession.builder.appName("Data Revenue").getOrCreate()
+   ```
+3. Data Visualization using Streamlit
