@@ -41,3 +41,30 @@ To follow along this learning we need to ensure python3 installed with pyspark &
     spark.stop()
    ```
 3. Data Visualization using Streamlit
+   ```python3
+   # Import necessary library
+   import streamlit as st
+   from read_data import read_data 
+   from kpis import number_sells, total_revenue, bigs
+
+   df = read_data()
+
+   chart_data = bigs
+   ```
+   ```python3
+   # Display total sells & total revenue
+   labels = ("TOTAL SELLS", "TOTAL REVENUE")
+   cols = st.columns(2)
+   kpis = (number_sells, total_revenue)
+   ```
+   ```python3
+   # Display Big Customer
+   st.title("Big Customers")
+
+   st.bar_chart(chart_data, x="customer", y="revenue")
+   ```
+   ```python3
+   # Display RAW data
+   st.markdown("# Raw Data")
+   st.dataframe(df)
+   ```
