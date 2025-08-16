@@ -1,6 +1,6 @@
 # streamlit_data_visualization
 # *Overview*
-Repo project to demonstrate Data visualization using Streamlit, input data from customer_data.csv & order_data.csv file through data processing using PySpark to revenue_data.csv. 
+Repo project to demonstrate Data visualization using Streamlit, input data from customer_data.csv & order_data.csv file through data processing using PySpark to revenue_data.csv. Using Streamlit to display the dashboard into web through localhost:8051 or URL: 192.168.249:8051
 # *Prerequisites*
 To follow along this learning we need to ensure python3 installed 
   ```bash
