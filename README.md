@@ -17,4 +17,18 @@ To follow along this learning we need to ensure python3 installed
    # Initilization Spark Session
    spark = SparkSession.builder.appName("Data Revenue").getOrCreate()
    ```
+   ```python3
+   join_df = spark.sql(join_query)
+    formated_df = join_df.withColumn("REVENUE", join_df["REVENUE"].cast(DoubleType()))
+
+    if formated_df is not None:
+        formated_df.printSchema()
+        formated_df.show(10)
+        formated_df.write \
+            .mode("overwrite") \
+            .option("header",True) \
+            .csv("/home/mulyo/Learning/ELT/Converted")
+
+    spark.stop()
+   ```
 3. Data Visualization using Streamlit
