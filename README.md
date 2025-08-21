@@ -1,4 +1,5 @@
 # streamlit_data_visualization
+![Screenshot of a project interface](streamlit_visualization.jpg)
 # *Overview*
 Repo project to demonstrate Data visualization using Streamlit, input data from customer_data.csv & order_data.csv file through data processing using PySpark to revenue_data.csv. Using Streamlit to display the dashboard into web through
 ```URL
@@ -8,7 +9,7 @@ localhost:8051
 https://192.168.249:8051
 ```
 # *Prerequisites*
-To follow along this learning we need to ensure python3 installed with pyspark & streamlit
+To follow along this project we need to ensure python3 installed with pyspark & streamlit
   ```bash
   python3 --version
   ```
@@ -40,7 +41,7 @@ To follow along this learning we need to ensure python3 installed with pyspark &
 
     spark.stop()
    ```
-3. Data Visualization using Streamlit
+2. Data Visualization using Streamlit
    ```python3
    # Import necessary library
    import streamlit as st
@@ -68,3 +69,5 @@ To follow along this learning we need to ensure python3 installed with pyspark &
    st.markdown("# Raw Data")
    st.dataframe(df)
    ```
+3. Streamlit result access from web browser: localhost:8501
+   ![Streamlit screenshot](streamlit.png) 
